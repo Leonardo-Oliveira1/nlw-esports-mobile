@@ -9,6 +9,7 @@ import { GameCard, GameCardProps } from '../../components/GameCard';
 import { Heading } from '../../components/Heading';
 import { Background } from '../../components/Background';
 
+import { IPv4 } from '../../utils/IPv4';
 
 import { styles } from './styles';
 
@@ -23,7 +24,7 @@ export function Home() {
     navigation.navigate('game', {id, title, bannerUrl})
   }
   useEffect(() => {
-    fetch('http://192.168.1.78:3333/games')
+    fetch(`http://${IPv4}:3333/games`)
     .then(response => response.json())
     .then(data => setGames(data))
   }, [])
