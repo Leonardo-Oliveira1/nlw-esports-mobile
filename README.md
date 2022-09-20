@@ -45,7 +45,7 @@ $ cd nlw-esports-mobile
 $ npm install
 
 # Copie no terminal o Ethernet Ethernet IPv4 do seu computador.
-$ ipconfig
+$ ipconfig (ou ifconfig, caso seu OS seja linux)
 
 # Cole o seu ip na const IPv4 do arquivo src/utils/IPv4.ts
 # Caso a porta do servidor for diferente de '3333', será necessário alterar a const Port no mesmo diretório acima.
